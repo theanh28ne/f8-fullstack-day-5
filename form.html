@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Form></Form></title>
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <div class="container-form">
+        <div class="inner">
+            <form action="" autocomplete="off">
+                <h1>Register</h1>
+                <div class="avata">
+                    <input type="file" id="avatarInput" accept="image/*" style="display:none">
+                    <label for="avatarInput" class="avatar-label">
+                        <img class="avatarImg" src="https://hoseiki.vn/wp-content/uploads/2025/03/avatar-mac-dinh-4.jpg"
+                            alt="Avatar" />
+                    </label>
+                    <label for="avatarInput">
+                        <div class="avatar-text">Nhấn vào ảnh để chọn ảnh đại diện</div>
+                    </label>
+
+                </div>
+                <div class="form-element">
+                    <label for="displayName" class="form-label">Display Name</label>
+                    <input id="displayName" type="text" class="form-input"
+                        placeholder="Tên hiển thị của bạn trên trang (có thể là biệt danh, tên thật, v.v.)"
+                        spellcheck="false">
+                </div>
+                <div class="form-element">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" type="text" class="form-input"
+                        placeholder="Địa chỉ email dùng để đăng nhập và nhận thông báo" spellcheck="false">
+                </div>
+                <div class="form-element">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input id="phone" type="text" class="form-input"
+                        placeholder="Số điện thoại để liên hệ hoặc xác minh tài khoản" spellcheck="false">
+                </div>
+                <div class="form-element">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" type="password" class="form-input"
+                        placeholder="Mật khẩu bảo vệ tài khoản, nên đủ mạnh">
+                </div>
+                <div class="form-element">
+                    <label for="confirm" class="form-label">Confirm Password</label>
+                    <input id="confirm" type="password" class="form-input"
+                        placeholder="Nhập lại mật khẩu ở trên để xác nhận">
+                </div>
+                <div class="form-element">
+                    <label class="form-label">Gender</label>
+                    <div class="form-gender">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                    <small>Giới tính của bạn (Nam, Nữ, Khác)</small>
+                </div>
+
+                <div class="form-element">
+                    <label class="form-label">Date of Birth</label>
+                    <input type="date" class="form-input" name="dob" placeholder="YYYY-MM-DD">
+                    <small>Ngày tháng năm sinh</small>
+                </div>
+
+                <div class="form-element">
+                    <label class="form-label">Address</label>
+                    <input id="address" type="text" class="form-input" name="address"
+                        placeholder="Địa chỉ hiện tại (tỉnh/thành phố)" spellcheck="false">
+                </div>
+
+                <div class="form-element">
+                    <label class="form-label">Communication Preferences</label>
+                    <div class="form-checkbox-group">
+                        <label><input type="checkbox" name="newsletter"> Subscribe to Newsletter (Nhận bản tin định
+                            kỳ)</label><br>
+                        <label><input type="checkbox" name="promo"> Receive Promotional Emails (Nhận thông tin khuyến
+                            mãi)</label><br>
+                        <label><input type="checkbox" name="updates"> Get Product Updates (Nhận cập nhật sản phẩm
+                            mới)</label>
+                    </div>
+                </div>
+                <button type="submit" class="form-btn">Đăng ký</button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

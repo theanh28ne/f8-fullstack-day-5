@@ -171,3 +171,152 @@
     font-size: 12px;
     color: #333;
 }
+
+/* Form */
+
+.container-form {
+    background: #8fc3ee;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    width: 400px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+    padding: 32px 28px 24px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2196f3;
+    letter-spacing: 1px;
+}
+
+.avata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar-label {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2.5px solid #2196f3;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+}
+
+.avatar-label:hover {
+    box-shadow: 0 4px 16px rgba(33, 150, 243, 0.25);
+    border-color: #1769aa;
+}
+
+.avatarImg {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: block;
+}
+
+.avatar-text {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.form-element {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #222;
+    font-size: 15px;
+}
+
+.form-input {
+    padding: 10px 12px;
+    border: 1.5px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+    background: #fafbfc;
+}
+
+.form-input:focus {
+    border-color: #2196f3;
+    background: #fff;
+}
+
+.form-gender {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 4px;
+}
+
+.form-gender label {
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+}
+
+.form-checkbox-group {
+    margin-top: 4px;
+}
+
+.form-checkbox-group label {
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 4px;
+}
+
+small {
+    color: #888;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+input[type="file"].form-input {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+button,
+.form-btn {
+    width: 100%;
+    padding: 12px 0;
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover,
+.form-btn:hover {
+    background: #1769aa;
+}
